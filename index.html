@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Softech</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header class="navbar">
+      <div class="logo">
+        <i class="fas fa-laptop-code logo-icon"></i>
+        <h1>softech</h1>
+      </div>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">Portfolio</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+      </nav>
+      <div class="navbtns">
+        <button class="loginbtn">Log In</button>
+        <button class="signupbtn">Start Free Trial</button>
+      </div>
+      <!-- Mobile Menu Icon -->
+      <div class="menu-icon" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+      </div>
+    </header>
+
+    <!-- My Profile Section -->
+    <section class="myProfile">
+      <div class="profile-content">
+        <div class="profile-image"></div>
+        <div class="profile-text">
+          <h1>I am Paul Dev</h1>
+          <p><strong>Web Developer</strong></p>
+          <p>
+            Hello! I’m Paul Dev, a sophomore BSIT student at the University of
+            Cabuyao aspiring to be a Full Stack Web Developer. I have been
+            studying HTML, CSS, and JavaScript, and I'm driven by a passion for
+            creating user-friendly web applications. I am dedicated to
+            continuous learning and staying current with industry trends to
+            build responsive and impactful digital solutions.
+          </p>
+          <!-- My Social Icons -->
+          <div class="myProfile-social-icons">
+            <a href="https://www.linkedin.com" target="_blank"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a href="https://www.twitter.com" target="_blank"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a href="https://www.instagram.com" target="_blank"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="https://www.facebook.com" target="_blank"
+              ><i class="fab fa-facebook"></i
+            ></a>
+          </div>
+          <button class="contact-btn">Contact Me</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+      <div class="stats-header">
+        <h1>Our Achievements</h1>
+        <p>
+          At Softech, we’re dedicated to delivering high-quality software
+          solutions, powered by our skilled team and strong collaboration. From
+          development to deployment, we ensure exceptional results with every
+          project.
+        </p>
+      </div>
+      <div class="stats-container">
+        <div class="stat">
+          <i class="fas fa-smile-beam stat-icon"></i>
+          <h3>250+</h3>
+          <p>Happy Clients</p>
+        </div>
+        <div class="stat">
+          <i class="fas fa-briefcase stat-icon"></i>
+          <h3>600+</h3>
+          <p>Projects Completed</p>
+        </div>
+        <div class="stat">
+          <i class="fas fa-mug-hot stat-icon"></i>
+          <h3>1.2K+</h3>
+          <p>Cups of Coffee</p>
+        </div>
+        <div class="stat">
+          <i class="fas fa-clock stat-icon"></i>
+          <h3>11K+</h3>
+          <p>Hours of Work</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Programming Languages Section -->
+    <section class="programming-languages">
+      <div class="languages-container">
+        <h2>Programming Languages</h2>
+        <div class="languages-list">
+          <div class="language-item html">
+            <i class="fab fa-html5"></i>
+            <p>HTML</p>
+          </div>
+          <div class="language-item css">
+            <i class="fab fa-css3-alt"></i>
+            <p>CSS</p>
+          </div>
+          <div class="language-item js">
+            <i class="fab fa-js"></i>
+            <p>JavaScript</p>
+          </div>
+          <div class="language-item java">
+            <i class="fab fa-java"></i>
+            <p>Java</p>
+          </div>
+          <div class="language-item nodejs">
+            <i class="fab fa-node-js"></i>
+            <p>Node.js</p>
+          </div>
+          <div class="language-item python">
+            <i class="fab fa-python"></i>
+            <p>Python</p>
+          </div>
+          <div class="language-item php">
+            <i class="fab fa-php"></i>
+            <p>PHP</p>
+          </div>
+          <div class="language-item swift">
+            <i class="fab fa-swift"></i>
+            <p>Swift</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team">
+      <h2>Our Team</h2>
+      <div class="team-members">
+        <div class="team-member">
+          <img
+            src="https://images.unsplash.com/photo-1609010697446-11f2155278f0?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZmVzc2lvbmFsJTIwcHJvZmlsZXxlbnwwfHwwfHx8MA%3D%3D"
+            alt="Team Member"
+          />
+          <h3>Amir Khan</h3>
+          <p>Co-Founder</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+          </div>
+          <button>Contact Amir</button>
+        </div>
+        <div class="team-member">
+          <img
+            src="https://images.squarespace-cdn.com/content/v1/631ba8eed2196a6795698665/9983aee5-a5ff-479c-aa3d-1f2701ceb52a/2022-09-27-Courtney-Jewell-0041-bw.jpg"
+            alt="Team Member"
+          />
+          <h3>Selena Smith</h3>
+          <p>Developer</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+          </div>
+          <button>Contact Selena</button>
+        </div>
+        <div class="team-member">
+          <img
+            src="https://cedricpuisney.photography/wp-content/uploads/2020/01/Brussels-photo-shoot-Life-coach-headshot.jpg"
+            alt="Team Member"
+          />
+          <h3>John Brooks</h3>
+          <p>Data Analyst</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+          </div>
+          <button>Contact John</button>
+        </div>
+        <div class="team-member">
+          <img
+            src="https://i.pinimg.com/564x/49/60/78/496078d513d45fac318feee993f3eafc.jpg"
+            alt="Team Member"
+          />
+          <h3>Diane Russel</h3>
+          <p>Designer</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+          </div>
+          <button>Contact Diane</button>
+        </div>
+      </div>
+    </section>
+
+    <div class="contact-page">
+      <!-- Background Image Section -->
+      <section class="image">
+        <img
+          src="https://img.freepik.com/free-vector/gradient-black-technology-background_23-2149209060.jpg"
+          alt="Contact Us"
+        />
+        <!-- Overlay Text and Social Media Icons -->
+        <div class="overlay-content">
+          <h1>Contact Us</h1>
+          <div class="social-icons">
+            <a href="https://linkedin.com" target="_blank" class="social-icon">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://twitter.com" target="_blank" class="social-icon">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://instagram.com" target="_blank" class="social-icon">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://facebook.com" target="_blank" class="social-icon">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Form Section -->
+      <div class="contact">
+        <section class="contact-form">
+          <h2>Get In Touch</h2>
+          <form>
+            <div class="form-group">
+              <input type="text" placeholder="First Name" required />
+              <input type="text" placeholder="Last Name" required />
+            </div>
+            <input type="email" placeholder="Your Email" required />
+            <input type="text" placeholder="Subject" required />
+            <textarea placeholder="Your Message" required></textarea>
+
+            <div class="form-footer">
+              <div class="form-checkbox">
+                <label>
+                  <input type="checkbox" />
+                  <span>Subscribe to our newsletter</span>
+                </label>
+              </div>
+              <button type="submit">Send Message</button>
+            </div>
+          </form>
+        </section>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="company-logo">
+          <i class="fas fa-laptop-code logo-icon"></i>
+          <!-- Laptop Icon -->
+          <span>softech</span>
+        </div>
+        <div class="subscribe">
+          <input type="email" placeholder="Enter your email..." />
+          <button type="submit">Subscribe</button>
+        </div>
+      </div>
+      <!-- Footer Content -->
+      <div class="footer-content">
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+          <a href="#">Home</a>
+          <a href="#">About Us</a>
+          <a href="#">Services</a>
+          <a href="#">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h3>Products</h3>
+          <a href="#">Software Solutions</a>
+          <a href="#">IT Consulting</a>
+          <a href="#">Cybersecurity</a>
+          <a href="#">Support</a>
+        </div>
+        <div class="footer-col">
+          <h3>Resources</h3>
+          <a href="#">Blog</a>
+          <a href="#">Case Studies</a>
+          <a href="#">FAQs</a>
+          <a href="#">Documentation</a>
+        </div>
+        <div class="footer-col">
+          <h3>Download Our App</h3>
+          <div class="store-buttons">
+            <a href="#" class="store-button">
+              <i class="fab fa-apple"></i> App Store
+            </a>
+            <a href="#" class="store-button">
+              <i class="fab fa-google-play"></i> Google Play
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <p>&copy; 2024 Softech. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Help</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
