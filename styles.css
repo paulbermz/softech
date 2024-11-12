@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
@@ -11,7 +11,6 @@ body {
   background-color: #f3f4f6;
   line-height: 1.6;
   padding-top: 60px;
-  overflow-x: hidden;
   width: 100%;
   margin: 0;
 }
@@ -141,6 +140,7 @@ button:hover {
   padding: 4rem 2rem;
   background: linear-gradient(to bottom, #000000, #434343);
   transition: background-color 0.5s ease;
+  height: 100%;
 }
 
 .profile:hover {
@@ -152,7 +152,7 @@ button:hover {
   align-items: center;
   justify-content: center;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1400px;
   animation: fadeIn 1s ease-in-out;
 }
 
@@ -220,6 +220,7 @@ button:hover {
 
 /* Profile h1 */
 .profile-text h1 {
+  margin-top: 50px;
   font-family: "Poppins", sans-serif;
   font-size: 3.9rem;
   font-weight: bold;
@@ -875,6 +876,15 @@ body {
   color: #f1f1f1;
 }
 
+/* Default Subscribe Section */
+.subscribe {
+  display: flex;
+  flex-direction: row; /* Stacks input and button vertically by default */
+  align-items: stretch;
+  width: 40%;
+  gap: 10px; /* Space between input and button */
+}
+
 .subscribe input {
   flex: 1;
   padding: 0.75rem;
@@ -994,8 +1004,8 @@ body {
   color: #fff;
 }
 
-/* Responsive styles */
-@media (max-width: 768px) {
+/* Responsive styles for screens between 418px and 768px */
+@media (min-width: 418px) and (max-width: 768px) {
   .navbar a {
     display: none;
   }
@@ -1012,6 +1022,10 @@ body {
     display: block;
   }
 
+  .myProfile {
+    margin-top: 30px;
+  }
+
   .profile-content {
     flex-direction: column;
     text-align: center;
@@ -1020,18 +1034,18 @@ body {
   .profile-image {
     width: 90%;
     height: 300px;
-    margin-left: 30px;
-    margin-bottom: 2rem;
+    margin: 0 auto 2rem;
   }
 
   .profile-text h1 {
+    margin-top: 0px;
     font-family: "Poppins", sans-serif;
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
   .profile-text p {
     font-family: "Poppins", sans-serif;
-    font-size: 1rem;
+    font-size: 0.9rem;
     margin-bottom: 1rem;
   }
 
@@ -1043,24 +1057,28 @@ body {
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-around;
-    gap: 1.5rem;
+    gap: 1.5rem; /* Adjusted gap */
+    padding: 0 1rem; /* Added padding */
   }
 
   .stat {
-    width: 95%;
-    margin: 1rem;
+    width: 90%;
+    margin: 1rem auto;
     text-align: left;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
   }
 
   .stats-header h1 {
     font-family: "Poppins", sans-serif;
     font-weight: 700;
-    font-size: 1.9rem;
+    font-size: 1.7rem;
   }
 
   .stats-header p {
     font-family: "Poppins", sans-serif;
-    font-size: 1.2rem;
+    font-size: 1rem;
     width: 100%;
   }
 
@@ -1074,10 +1092,18 @@ body {
     margin-bottom: 1rem;
   }
 
+  .languages-list {
+    justify-content: center;
+  }
+
+  .language-item {
+    width: 90%; /* Adjusted size */
+  }
+
   .image {
     position: relative;
     width: 100%;
-    height: 80vh;
+    height: 70vh;
     overflow: hidden;
   }
 
@@ -1108,21 +1134,21 @@ body {
   }
 
   .form-checkbox {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     margin-bottom: 1rem;
     text-align: left;
   }
 
   .contact-form button[type="submit"] {
-    max-width: 50%;
-    margin-left: 50%;
+    max-width: 90%; /* Adjusted width */
+    margin: 0 auto; /* Centered */
   }
 
-  /* Team Member Grid - 2 images per row on small screens */
+  /* Team Member Grid - 2 images per row */
   .team-members {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
+    gap: 1.5rem;
   }
 
   .team-member {
@@ -1132,18 +1158,19 @@ body {
   }
 
   .team-member img {
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
     object-fit: cover;
     border-radius: 10px;
   }
 
-  .languages-list {
-    justify-content: center; /* Center items on smaller screens */
+  .overlay-content h1 {
+    font-size: 1.8rem; /* Reduce font size */
   }
 
-  .language-item {
-    width: 45%; /* Make items larger on medium screens */
+  .social-icons .social-icon i {
+    font-size: 1rem; /* Reduce icon size */
+    margin: 0.3rem; /* Adjust spacing between icons */
   }
 
   /* Footer Sections Alignment */
@@ -1155,6 +1182,7 @@ body {
     text-align: left;
     width: 100%;
     padding-left: 1rem;
+    gap: 1rem; /* Space between sections */
   }
 
   /* Company Logo */
@@ -1178,9 +1206,19 @@ body {
     width: 100%;
     max-width: 100%;
     margin-top: 1rem;
+    padding: 1rem 0;
   }
 
-  /* Footer Links */
+  .subscribe input[type="email"] {
+    width: 60%; /* Adjust width to allow space for the button */
+  }
+
+  .subscribe button[type="submit"] {
+    width: 30%;
+    margin-left: auto;
+    padding: 0.8rem;
+  }
+
   .footer-links {
     margin-top: 1rem;
     text-align: left;
@@ -1188,6 +1226,7 @@ body {
 
   .store-buttons {
     justify-content: flex-start;
+    margin-bottom: 1rem;
   }
 }
 
