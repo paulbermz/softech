@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 body {
@@ -995,10 +996,6 @@ body {
 
 /* Responsive styles */
 @media (max-width: 768px) {
-  body {
-    overflow-x: hidden; /* Prevent horizontal scrolling */
-  }
-
   .navbar a {
     display: none;
   }
@@ -1319,4 +1316,3 @@ body {
     margin-right: 1rem;
   }
 }
-
