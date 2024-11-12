@@ -1006,7 +1006,7 @@ body {
 }
 
 /* Responsive styles for screens between 418px and 768px */
-@media (min-width: 418px) and (max-width: 768px) {
+@media (min-width: 418px) {
   .navbar a {
     display: none;
   }
